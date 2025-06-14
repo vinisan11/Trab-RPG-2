@@ -183,6 +183,7 @@ int main() {
         // Time 1 joga
         jogada_T1();
         printf("\nTime 1 joga\n");
+        printf("%d\n",mortos_T1);
         printf("%s (Vida: %d) ataca %s do Time 2 (Vida antes: %d)\n",
                nomes[selec_personagem], time_1[selec_personagem],
                nomes[sorteia_inimigo], vida_antiga);
@@ -225,6 +226,7 @@ int main() {
         // Time 2 joga
         jogada_T2();
         printf("\nTime 2 joga\n");
+        printf("%d\n",mortos_T2);
         printf("%s (Vida: %d) ataca %s do Time 1 (Vida antes: %d)\n",
                nomes[selec_personagem], time_2[selec_personagem],
                nomes[sorteia_inimigo], vida_antiga);
@@ -250,7 +252,7 @@ int main() {
             printf("%s agora com %d de vida \n", nomes[sorteia_inimigo], time_1[sorteia_inimigo]);
         }
 
-                    if (mortos_T1 == 5)
+    if (mortos_T1 == 5)
     {
         printf("\nTime 2 Ganhou!");
         return 1;
